@@ -7,7 +7,9 @@
 Error: Invalid resource name - Лейбл именуется с цифры, что недопустима
 Error: Reference to undeclared resource - Ресурс не описан, описанный выше ресурс имеет иные лейблы
 Error: Unsupported attribute - Не поддерживаемый аттрибут. Т.к. регистр иммет значение, указанный в манифесте аттрибут не поддерживается.
-5. ![img](./image8.png)
+5.
+![img](./image8.png)
+```
 resource "docker_image" "nginx" {
   name         = "nginx:latest"
   keep_locally = true
@@ -22,6 +24,7 @@ resource "docker_container" "nginx" {
     external = 9090
   }
 }
+```
 6. в чём может быть опасность применения ключа  ```-auto-approve```.
 Отсутвие дополнительного подтверждения, в случае наличия ошибок.
 зачем может пригодиться данный ключ?
