@@ -33,6 +33,26 @@ variable "vpc_name" {
 
 variable "vms_ssh_root_key" {
   type        = string
-  default     = "<your_ssh_ed25519_key>"
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMG1FJ8MscesqvvSZIi5xFyykCA/V543wwtfRpBo2NZz rav@compute-vm-2-2-20-hdd-1755526249128"
   description = "ssh-keygen -t ed25519"
+}
+
+##TASK2 VARS
+
+variable "img_fam" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+  description = "yandex_compute_image"
+}
+
+variable "instanse_name" {
+  type        = string
+  default     = "netology-develop-platform-web"
+  description = "instanse name"
+}
+
+variable "p_id" {
+  type        = string
+  default     = "standard-v1"
+  description = "platform id"
 }
