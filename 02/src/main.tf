@@ -13,7 +13,7 @@ data "yandex_compute_image" "ubuntu" {
   family = var.img_fam
 }
 resource "yandex_compute_instance" "platform" {
-  name        = var.instanse_name
+  name        = local.platform_instance_name
   platform_id = var.p_id
   resources {
     cores         = 2
@@ -41,7 +41,7 @@ resource "yandex_compute_instance" "platform" {
 }
 
 resource "yandex_compute_instance" "platform_db" {
-  name        = var.vm_db_instanse_name
+  name        = local.platform_db_instance_name
   platform_id = var.vm_db_p_id
   resources {
     cores         = 2
