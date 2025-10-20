@@ -37,6 +37,7 @@ core_fraction=5 - гарантированная доля процессора 5
 ![img10](./image10.png)
 
 # Задание 5
-![img11](./image11.png)
+![img11](./image11.png)ß
 
 # Задание 6
+![img12](./image12.png)

@@ -1,8 +1,8 @@
-variable "vm_db_img_fam" {
-  type        = string
-  default     = "ubuntu-2004-lts"
-  description = "yandex_compute_image"
-}
+# variable "vm_db_img_fam" {
+#   type        = string
+#   default     = "ubuntu-2004-lts"
+#   description = "yandex_compute_image"
+# }
 
 variable "vm_db_instanse_name" {
   type        = string
